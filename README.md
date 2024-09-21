@@ -1,0 +1,4 @@
+## Nutritional Tracker
+
+`npm install`
+

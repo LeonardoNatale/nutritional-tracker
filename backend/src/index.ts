@@ -1,9 +1,14 @@
 import { Hono } from 'hono';
 
-const app = new Hono();
+type Bindings = {
+  SECRET_KEY: string;
+};
+
+const app = new Hono<{ Bindings: Bindings }>();
 
 app.get('/', (c) => {
-  return c.text('Hello Hono!');
+  const SECRET_KEY = c.env.SECRET_KEY;
+  return c.json({ message: 'Hello', secret: SECRET_KEY });
 });
 
 export default app;
