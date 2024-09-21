@@ -1,14 +1,14 @@
 {
-  "private": true,
-  "engines": {
-    "node": "20.x"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "workspaces": ["frontend", "backend"],
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.1"
-  },
-  "packageManager": "npm"
+	"private": true,
+	"engines": {
+		"node": "20.x"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"workspaces": ["frontend", "backend"],
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.1"
+	},
+	"packageManager": "npm"
 }

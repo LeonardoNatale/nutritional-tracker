@@ -1,26 +1,25 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
+	// Link to configuration schema from the package.json-defined version of Biome
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"vcs": {
 		"enabled": false,
 		"clientKind": "git",
 		"useIgnoreFile": false
 	},
-	"files": { "ignoreUnknown": false, "ignore": [], "include": 
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": [],
+		"include": [
 			// Check application code
-			"shared/src/**/*.ts",
-			"niklas/src/**/*.ts",
-			"platform/app/**/*.ts",
-			"platform/app/**/*.tsx",
-			"dpp/app/**/*.ts",
-			"dpp/app/**/*.tsx",
-			"ui-components/src/**/*.ts",
-			"ui-components/src/**/*.tsx",
+			"backend/src/**/*.ts",
+			"frontend/app/**/*.ts",
 			// Check root configuration files and scripts
 			"./*.json",
 			"./*/*.json",
 			"./*/*.js",
 			"./*/*.ts",
 			"./*/*.mjs"
+		]
 	},
 	"formatter": { "enabled": true, "indentStyle": "tab" },
 	"organizeImports": { "enabled": true },
@@ -37,9 +36,6 @@
 				"recommended": false
 			}
 		}
-	},
-	"formatter": {
-		"enabled": true
 	},
 	"javascript": {
 		"parser": {
