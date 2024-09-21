@@ -14,11 +14,7 @@
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"outDir": "./dist",
-		"paths": {
-			"@api/infra/*": ["src/api/infrastructure/*"],
-			"@libs/*": ["src/libs/*"],
-			"src/*": ["src/*"]
-		},
+		"paths": {},
 		"removeComments": true,
 		"resolveJsonModule": true,
 		"rootDir": ".",
